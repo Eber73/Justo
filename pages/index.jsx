@@ -1,11 +1,25 @@
+import styled from 'styled-components';
 import { useState } from 'react';
+
+import ImageWithSpace from '../src/components/layout/ImageWithSpace'
+
+
+const StyledContainer =styled.div`
+ box-sizing: border-box;
+ background-color: ${props => props.theme.white};
+
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+
+ `
+
 
 function Home() {
   return (
-    <div>
-      <h1>Home2</h1>
-      <Contador/>
-    </div>
+    <StyledContainer >
+      <ImageWithSpace/>
+    </StyledContainer>  
     )
 }
 
