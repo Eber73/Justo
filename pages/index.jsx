@@ -71,7 +71,7 @@ const ServicesImage = styled.img`
 function Home() {
   return (
     <StyledContainer>
-      <HeaderImage image='/banner.svg'/>
+      <HeaderImage image='/Banner.svg'/>
       <ImageWithSpace image={'/pivo.svg'}>
         <H3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum aut consequatur blanditiis modi voluptate quia obcaecati id autem,</H3>
       </ImageWithSpace> 
