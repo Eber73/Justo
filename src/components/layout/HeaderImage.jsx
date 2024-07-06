@@ -71,7 +71,7 @@ function HeaderImage({ image }) {
       <StyledContentHome>
         <H1>Justo & Filhos</H1>
         <StyledLine />
-        <H2>AGROPECURIA</H2>
+        <H2>AGROPECUÁRIA</H2>
       </StyledContentHome>
     </StyledFlex>
   );
