@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const H2 = styled.h2`
-  font-size: 25px;
+  font-size: 50px;
   font-weight: bold;
   text-shadow: 
   1px 1px 1px #000, 
