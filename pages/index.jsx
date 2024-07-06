@@ -1,25 +1,27 @@
 import styled from 'styled-components';
 import { useState } from 'react';
 
-import ImageWithSpace from '../src/components/layout/ImageWithSpace'
+import HeaderImage from '../src/components/layout/HeaderImage';
+import ImageWithSpace from '../src/components/layout/ImageWithSpace';
 
 
-const StyledContainer =styled.div`
- box-sizing: border-box;
- background-color: ${props => props.theme.white};
+// const StyledContainer =styled.div`
+//  background-color: ${props => props.theme.black};
 
- display: flex;
- flex-direction: column;
- justify-content: center;
+//  display: flex;
+//  flex-direction: column;
+//  justify-content: center;
 
- `
+// padding: 0px, 2040px, 0px, 2040px;
+
+//  `
+
 
 
 function Home() {
   return (
-    <StyledContainer >
-      <ImageWithSpace/>
-    </StyledContainer>  
+    // <StyledContainer></StyledContainer>  
+      <HeaderImage image='/Banner.jpg'/>
     )
 }
 

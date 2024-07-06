@@ -1,37 +1,37 @@
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
-const WIDTH_BREAK = '500px'
+// import H1 from '../typography/H1';
+// import H2 from '../typography/H2';
+// const WIDTH_BREAK = '500px'
 
-const StyledFlex = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: start;
+// const StyledFlex = styled.div`
+//   display: flex;
+//   justify-content: center;
+//   align-items: start;
+//   color: ${props => props.theme.white};
 
-  padding: 0;
-  margin-top: 0;
-`
+// `
 
-const StyledImage = styled.div`
- background-image: url('${props => props.image}');
- background-position: center;
- background-repeat: no-repeat;
- background-size: auto;
+// const StyledImage = styled.div`
+//  background-image: url('${props => props.image}');
+//  background-position: center;
+//  background-repeat: no-repeat;
+//  background-size: cover;
 
- margin-top: 0;
- padding: 0;
+//  margin-top: 0;
+//  padding: 0;
 
- width: 80%;
- height: 50vh;
+//  width: 100%;
+//  height: 70vh;
 
- @media (max-width: ${WIDTH_BREAK}) {
-  display: none;
- }
-`
+//  @media (max-width: ${WIDTH_BREAK}) {
+//   display: none;
+//  }
+// `
 
 // const StyledContainer = styled.div`
 
-//   background-color: ${props => props.theme.white};
-//   padding: 30px 50px;
+//   background-color: ${props => props.theme.black};
 
 //    @media (min-width: ${WIDTH_BREAK}) {
 //     width: calc(${WIDTH_BREAK} - 100px);
@@ -53,18 +53,46 @@ const StyledImage = styled.div`
 //   }
 // `
 
+// const StyledContentHome =styled.div`
+//  /* background-color: black; */
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   position: absolute;
+//   padding: 10%;
+  
+// `
+// const SlyledLine = styled.div`
+//   background-color: ${props => props.theme.white};
+// height: 2px;
+// width: 100%;
+// overflow-y: auto; 
 
-function ImageWithSpace ( { children, image } ) {
-  return (
-    <StyledFlex>
-      <StyledImage image={image}/>
-    </StyledFlex>
-  )
+// &:before, &:after {
+//  content: '';
+//  margin: auto;
+// }
+// `
 
-}
+// function ImageWithSpace ( { image } ) {
+//   return (
+//     <StyledFlex>
 
-ImageWithSpace.defaultProps = {
-  image: '/Banner.jpg'
-}
+//       <StyledImage image={image}/>
+//       <StyledContentHome>
+//       <H1>Justo & Filhos</H1>
+//       <SlyledLine/>
+//       <H2>AGROPECURIA</H2>
+//       </StyledContentHome>
 
-export default ImageWithSpace
+//     </StyledFlex>
+//   )
+
+// }
+
+// ImageWithSpace.defaultProps = {
+//   image: '/Banner.jpg'
+// }
+
+// export default ImageWithSpace

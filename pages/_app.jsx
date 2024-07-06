@@ -12,7 +12,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Baskervville", serif;
     color: ${props => props.theme.black};
     background-color: ${props => props.theme.background};
   }
