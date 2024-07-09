@@ -22,7 +22,7 @@ const StyledImage = styled.div`
   height: 50vh;
 
   @media (max-width: ${WIDTH_BREAK}) {
-    display: none;
+
   }
 `;
 

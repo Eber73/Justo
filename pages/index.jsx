@@ -22,9 +22,7 @@ const SlyledContent = styled.div`
   flex-direction: column;
   margin-top: 30px;
   justify-content: space-between;
-  gap: calc(5vh - 50px);
-  padding-right: calc(50vh - 50px);
-  padding-left: calc(50vh - 50px);
+
 
 `
 const ServicesContent = styled.div`
@@ -73,26 +71,11 @@ function Home() {
     <StyledContainer>
       <HeaderImage image='/Banner.svg'/>
       <ImageWithSpace image={'/pivo.svg'}>
-        <H3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum aut consequatur blanditiis modi voluptate quia obcaecati id autem,</H3>
+              <H2>Produção</H2>
+
       </ImageWithSpace> 
-                            <SlyledContent>
-                            <H2>Variedades</H2>
-                            <ServicesContent>
-                            
-                              <ServicesCard>
-                                <ServicesImage src="./colheitadeira.svg"alt="Choleitadeira" />
-                                <ServicesText>Translados Gratuitos</ServicesText>
-                              </ServicesCard>
-                              <ServicesCard>
-                                <ServicesImage src="./citrus.svg" alt="Citrus" />
-                                <ServicesText>Translados Gratuitos</ServicesText>
-                              </ServicesCard>
-                              <ServicesCard>
-                                <ServicesImage src="./gado.svg" alt="Gado" />
-                                <ServicesText>Translados Gratuitos</ServicesText>
-                              </ServicesCard>
-                            </ServicesContent>
-                            </SlyledContent>
+
+
 
     </StyledContainer>  
     
