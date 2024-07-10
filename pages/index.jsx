@@ -6,7 +6,7 @@ import ImageWithSpace from '../src/components/layout/ImageWithSpace';
 import H2 from '../src/components/typography/H2';
 import H3 from '../src/components/typography/H3';
 
-const WIDTH_BREAK = '700px'
+const WIDTH_BREAK = '940px'
 
 
 const StyledContainer =styled.div`
@@ -27,10 +27,16 @@ const SltyledSummary = styled.div`
 
 //------------------------------------------------
 const SlyledContent = styled.div`
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 2px 23vw;
+
+  @media (max-width: ${WIDTH_BREAK}) {
+  padding: 0 50px;
+  
+ }
 
 
 `
@@ -40,6 +46,9 @@ const ServicesContent = styled.div`
   gap: 20px;
   @media (max-width: ${WIDTH_BREAK}) {
   flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
   width: 100%;
  }
 
