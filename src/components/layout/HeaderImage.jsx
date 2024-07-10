@@ -19,7 +19,7 @@ const StyledImage = styled.div`
   margin-top: 0;
   padding: 0;
   width: 100%;
-  height: 50vh;
+  height: clamp(20vh, 30vw, 50vh);
 
   @media (max-width: ${WIDTH_BREAK}) {
 
@@ -54,6 +54,7 @@ const StyledContentHome = styled.div`
 
 const StyledLine = styled.div`
   background-color: ${props => props.theme.white};
+  margin-bottom: 3px;
   height: 2px;
   width: 100%;
 
