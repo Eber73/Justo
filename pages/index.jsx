@@ -3,7 +3,6 @@ import { useState } from 'react';
 
 import HeaderImage from '../src/components/layout/HeaderImage';
 import ImageWithSpace from '../src/components/layout/ImageWithSpace';
-import H1 from '../src/components/typography/H1';
 import H2 from '../src/components/typography/H2';
 import H3 from '../src/components/typography/H3';
 
@@ -16,22 +15,28 @@ const StyledContainer =styled.div`
 
 
  `
+
+const SltyledSummary = styled.div`
+  display: flex;
+
+
+
+`
+
 //------------------------------------------------
 const SlyledContent = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
-  justify-content: space-between;
+  justify-content: center;
+  padding: 2px 23vw;
 
 
 `
 const ServicesContent = styled.div`
   display: flex;
-
-  margin-top: 30px;
   justify-content: space-between;
-  flex: 1;
-  gap: calc(5vh - 50px);
+  gap: 20px;
+
 
 `
 
@@ -49,7 +54,6 @@ const ServicesText = styled.div`
 
 const ServicesImage = styled.img`
   width: 100%;
-  height: 50vh;
 `
 
 // const Footer = styled.footer`
@@ -70,13 +74,30 @@ function Home() {
   return (
     <StyledContainer>
       <HeaderImage image='/Banner.svg'/>
-      <ImageWithSpace image={'/pivo.svg'}>
-              <H2>Produção</H2>
+      <SltyledSummary>      
+        <ImageWithSpace image={'/pivo.svg'}>
+              <H3>Produção</H3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, ducimus minus maiores iste voluptate obcaecati doloremque, dolorem mollitia quis, error praesentium libero aliquam magni. Ut tempore a eos optio ipsam.</p>
+        </ImageWithSpace> 
+      </SltyledSummary>
 
-      </ImageWithSpace> 
-
-
-
+      <SlyledContent>
+                  <H3>Variedades</H3>
+                            <ServicesContent>
+                                  <ServicesCard>
+                                            <ServicesImage src="./colheitadeira.svg"alt="Choleitadeira" />
+                                            <ServicesText>Translados Gratuitos</ServicesText>
+                                  </ServicesCard>
+                                  <ServicesCard>
+                                            <ServicesImage src="./citrus.svg" alt="Citrus" />
+                                            <ServicesText>Translados Gratuitos</ServicesText>
+                                  </ServicesCard>
+                                  <ServicesCard>
+                                            <ServicesImage src="./gado.svg" alt="Gado" />
+                                            <ServicesText>Translados Gratuitos</ServicesText>
+                                  </ServicesCard>
+                            </ServicesContent>
+        </SlyledContent>
     </StyledContainer>  
     
    // <Footer>Seu rodapé aqui</Footer>
