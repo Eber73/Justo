@@ -6,6 +6,8 @@ import ImageWithSpace from '../src/components/layout/ImageWithSpace';
 import H2 from '../src/components/typography/H2';
 import H3 from '../src/components/typography/H3';
 
+const WIDTH_BREAK = '700px'
+
 
 const StyledContainer =styled.div`
 
@@ -36,7 +38,10 @@ const ServicesContent = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 20px;
-
+  @media (max-width: ${WIDTH_BREAK}) {
+  flex-direction: column;
+  width: 100%;
+ }
 
 `
 
