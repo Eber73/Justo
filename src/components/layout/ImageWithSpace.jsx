@@ -1,16 +1,25 @@
 import styled from "styled-components";
+import Varieties from "./Varieties";
 const WIDTH_BREAK = '700px'
 
 const StyledFlex = styled.div`
   display: flex;
-`
+  flex-direction: column;
+  @media (min-width: 1400px) {
+  flex-direction: row;
+ }
 
+`
+const StyledBloco = styled.div`
+  display: flex;
+
+
+`
 const StyledImage = styled.div`
  background-image: url('${props => props.image}');
  background-position: right;
  background-repeat: no-repeat;
  background-size: cover;
-
  width: 50%;
  height: 50vh;
 
@@ -23,6 +32,7 @@ const StyledContainer = styled.div`
 
   background-color: ${props => props.theme.white};
   padding: 30px 50px;
+  flex: 2;
 
   
  width: 50%;
@@ -53,10 +63,14 @@ const StyledContainer = styled.div`
 function ImageWithSpace ( { children, image } ) {
   return (
     <StyledFlex>
+      <StyledBloco>
       <StyledImage image={image}/>
       <StyledContainer>
         {children}
       </StyledContainer>
+      </StyledBloco>
+      <Varieties />
+      
     </StyledFlex>
   )
 
