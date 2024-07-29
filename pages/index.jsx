@@ -4,7 +4,7 @@ import { useState } from 'react';
 import HeaderImage from '../src/components/layout/HeaderImage';
 import ImageWithSpace from '../src/components/layout/ImageWithSpace';
 import H3 from '../src/components/typography/H3';
-
+import Contact from '../src/components/layout/Contact';
 
 
 
@@ -26,14 +26,11 @@ const SltyledSummary = styled.div`
 //------------------------------------------------
 
 
-// const Footer = styled.footer`
-//   background-color: #c4c4c4;
-//   text-align: center;
-//   padding: 20px 0;
-// `
-
-
-//-----------------------------------------------
+const Footer = styled.footer`
+   background-color: #c4c4c4;
+   text-align: center;
+  padding: 20px 0;
+`
 
 
 
@@ -50,10 +47,14 @@ function Home() {
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis, ducimus minus maiores iste voluptate obcaecati doloremque, dolorem mollitia quis, error praesentium libero aliquam magni. Ut tempore a eos optio ipsam.</p>
         </ImageWithSpace>
       </SltyledSummary>
-
+      <Contact image={'/Contato.svg'}>
+        <H3>Produção</H3>
+        <p>Lorem ipsum dolor, sit ametm.</p>
+        </Contact>
+      <Footer>Seu rodapé aqui</Footer>
     </StyledContainer>  
     
-   // <Footer>Seu rodapé aqui</Footer>
+
     )
 }
 

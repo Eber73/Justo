@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import H3 from '../typography/H3';
 
-const WIDTH_BREAK = '940px'
+const WIDTH_BREAK = '500px'
 
 
 
@@ -27,8 +27,8 @@ const ServicesContent = styled.div`
   flex-direction: column;
   justify-content: center;
   margin: 0;
-  padding: 0;
-  width: 100%;
+  padding: 0 10vw;
+  width: 80%;
  }
  @media (min-width: 1870px) {
   justify-content: center;
@@ -50,7 +50,7 @@ const StyledPadding = styled.div`
 
 const ServicesText = styled.div`
   background-color: ${props => props.theme.black};
-  padding: 17px 0;
+  padding: 17px 3px;
   cursor: pointer;
   text-align: center;
   font-weight: bold;
