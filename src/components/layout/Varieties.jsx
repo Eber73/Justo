@@ -70,17 +70,17 @@ function Varieties () {
           <H3>Variedades</H3>
         </StyledPadding>
         <ServicesImage src="./colheitadeira.svg"alt="Choleitadeira" />
-        <ServicesText>Translados Gratuitos</ServicesText>
+        <ServicesText>Grãos</ServicesText>
       </ServicesCard>
       <ServicesCard>
         <StyledPadding/>
         <ServicesImage src="./citrus.svg" alt="Citrus" />
-        <ServicesText>Translados Gratuitos</ServicesText>
+        <ServicesText>Citrus</ServicesText>
       </ServicesCard>
       <ServicesCard>
         <StyledPadding/>
         <ServicesImage src="./gado.svg" alt="Gado" />
-        <ServicesText>Translados Gratuitos</ServicesText>
+        <ServicesText>Pecuária</ServicesText>
       </ServicesCard>
     </ServicesContent>
 </SlyledContent>
